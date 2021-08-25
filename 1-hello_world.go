@@ -21,18 +21,17 @@ func congradulateParents(parents []string, child string) {
 		msg := "Congradulations, {{.Name}} on the birth of your child, {{.Child}}!\n"
 		substitute := Parent{Name: parents[i], Child: child}
 		message, error := template.New("msg").Parse(msg)
-		error = message.Execute(os.Stdout, substitute)
+		message.Execute(os.Stdout, substitute)
 		if error != nil {
 			fmt.Println(error)
 		}
 	}
 }
-
 func growAYearOlder(name string, age int) {
 	msg := "Happy Birthday, {{.Name}}. You are now {{.Age}} year(s) old.\n"
 	substitute := Child{Name: name, Age: age}
 	message, error := template.New("msg").Parse(msg)
-	error = message.Execute(os.Stdout, substitute)
+	message.Execute(os.Stdout, substitute)
 	if error != nil {
 		fmt.Println(error)
 	}
