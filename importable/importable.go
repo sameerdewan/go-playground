@@ -2,6 +2,6 @@ package importable
 
 import "fmt"
 
-func runImportable() {
+func RunImportable() {
 	fmt.Println("Called from importable!")
 }

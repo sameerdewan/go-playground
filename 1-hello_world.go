@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"os"
 	"text/template"
+
+	"github.com/sameerdewan/go-playground/importable"
 )
 
 type Child struct {
@@ -59,4 +61,5 @@ func main() {
 	}
 	var integer int = dynamicTypeTest()
 	fmt.Printf("%T", integer) // Prints type
+	importable.RunImportable()
 }
