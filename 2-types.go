@@ -13,5 +13,5 @@ func dynamicTypeTest() int {
 
 func main() {
 	var integer int = dynamicTypeTest()
-	fmt.Printf("%T", integer)
+	fmt.Printf("%T", integer) // Prints type
 }
