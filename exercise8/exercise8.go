@@ -37,6 +37,13 @@ func demoAnonymousFunc() {
 	}(germanShepherd)
 }
 
+func returnFunc() func(aString string) {
+	printString := func(aString string) {
+		fmt.Printf("\nreturnFunc: %v\n", aString)
+	}
+	return printString
+}
+
 func Run() {
 	spreadParams(1, 2, 3, 4, 5)
 	spreadable := []int{6, 7, 8, 9}
@@ -56,4 +63,13 @@ func Run() {
 	wagTail(havanaBrown)
 
 	demoAnonymousFunc()
+
+	storedFunction := func() {
+		fmt.Println("This was stored!")
+	}
+
+	storedFunction()
+
+	printString := returnFunc()
+	printString("My String")
 }
