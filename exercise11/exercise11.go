@@ -3,6 +3,8 @@ package exercise11
 import (
 	"fmt"
 	"sort"
+
+	"golang.org/x/crypto/bcrypt"
 )
 
 func sortedSliceExample() {
@@ -14,6 +16,16 @@ func sortedSliceExample() {
 	fmt.Println(slice)
 }
 
+func exampleBcrypt() {
+	rawPassword := "password123"
+	encryptedPassword, err := bcrypt.GenerateFromPassword([]byte(rawPassword), bcrypt.MinCost)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Printf("\nraw:%v\t\tencrypted:%v\n", rawPassword, encryptedPassword)
+}
+
 func Run() {
 	sortedSliceExample()
+	exampleBcrypt()
 }
