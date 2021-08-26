@@ -14,7 +14,13 @@ func logSliceIndexValue(slice []interface{}) {
 	}
 }
 
+func grabSlice(slice []interface{}, start uint, end uint) []interface{} {
+	return slice[start:end]
+}
+
 func Run() {
 	var slice []interface{} = generalizedSlice()
 	logSliceIndexValue(slice)
+	var slicedSlice []interface{} = grabSlice(slice, 0, 1)
+	fmt.Printf("\nslice:%v\nslicedSlice:%v\n", slice, slicedSlice) // test shows slicing a slice does not mutate the original slice
 }
