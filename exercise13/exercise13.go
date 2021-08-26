@@ -23,7 +23,9 @@ func Run() {
 		}()
 	}
 
-	fmt.Println("Reached the end of the program 1")
+	fmt.Println("Reached the end of the program a")
 
 	wg.Wait()
+
+	fmt.Println("a - Final count:\t\t", counter)
 }
