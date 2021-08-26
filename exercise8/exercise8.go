@@ -2,10 +2,26 @@ package exercise8
 
 import "fmt"
 
+type Pet interface {
+	greetHuman()
+}
 type Dog string
+type Cat string
 
 func (dog Dog) bark() {
 	fmt.Printf("Woof! I am a %v\n", dog)
+}
+
+func (dog Dog) greetHuman() {
+	fmt.Printf("\nWoof! I am a %v\n", dog)
+}
+
+func (cat Cat) greetHuman() {
+	fmt.Printf("\nMweow! I am a %v\n", cat)
+}
+
+func wagTail(pet Pet) {
+	fmt.Printf("\n*%T wags tail*\n", pet)
 }
 
 func spreadParams(x ...int) { // "Variadic parameters"
@@ -22,4 +38,13 @@ func Run() {
 	goldenRetriever.bark()
 	var shibaInu Dog = "Shiba Inu"
 	shibaInu.bark()
+
+	var shihTzu Dog = "Shih Tzu"
+	var havanaBrown Cat = "Havana Brown"
+
+	shihTzu.greetHuman()
+	havanaBrown.greetHuman()
+
+	wagTail(shihTzu)
+	wagTail(havanaBrown)
 }
