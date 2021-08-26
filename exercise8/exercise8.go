@@ -38,10 +38,9 @@ func demoAnonymousFunc() {
 }
 
 func returnFunc() func(aString string) {
-	printString := func(aString string) {
+	return func(aString string) {
 		fmt.Printf("\nreturnFunc: %v\n", aString)
 	}
-	return printString
 }
 
 func Run() {
