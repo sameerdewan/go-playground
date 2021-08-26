@@ -1,6 +1,35 @@
 package exercise7
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
+
+type Location struct {
+	latitude  float32
+	longitude float32
+}
+
+type Human struct {
+	age      uint
+	first    string
+	last     string
+	location Location
+	id       uint
+}
+
+func structsTest() {
+	var location Location = Location{latitude: 87.3231, longitude: 99.1232}
+	fmt.Printf("\nlocation:%v\n", location)
+	var sameerDewan Human = Human{
+		age:      27,
+		first:    "Sameer",
+		last:     "Dewan",
+		location: location,
+		id:       uint(rand.Int()),
+	}
+	fmt.Printf("\nhuman:%v\n", sameerDewan)
+}
 
 func demoMap() map[string]int {
 	demo := map[string]int{
@@ -40,4 +69,5 @@ func Run() {
 	loopThroughMap(demo)
 	deleteOddValuedPairs(demo)
 	fmt.Printf("\n%v\n", demo)
+	structsTest()
 }
