@@ -1,5 +1,7 @@
 package exercise1
 
-func run() {
+import "fmt"
 
+func run() {
+	fmt.Println("This is from exercise 1!")
 }
