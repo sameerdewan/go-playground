@@ -30,6 +30,13 @@ func spreadParams(x ...int) { // "Variadic parameters"
 	}
 }
 
+func demoAnonymousFunc() {
+	var germanShepherd Dog = "German Shepherd"
+	func(dog Dog) {
+		fmt.Printf("\n%v\n", germanShepherd)
+	}(germanShepherd)
+}
+
 func Run() {
 	spreadParams(1, 2, 3, 4, 5)
 	spreadable := []int{6, 7, 8, 9}
@@ -47,4 +54,6 @@ func Run() {
 
 	wagTail(shihTzu)
 	wagTail(havanaBrown)
+
+	demoAnonymousFunc()
 }
