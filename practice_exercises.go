@@ -9,7 +9,8 @@ import (
 	// "github.com/sameerdewan/go-playground/exercise12"
 	// "github.com/sameerdewan/go-playground/exercise13"
 	// "github.com/sameerdewan/go-playground/exercise14"
-	"github.com/sameerdewan/go-playground/exercise15"
+	// "github.com/sameerdewan/go-playground/exercise15"
+	"github.com/sameerdewan/go-playground/exercise16"
 	// "github.com/sameerdewan/go-playground/exercise2"
 	// "github.com/sameerdewan/go-playground/exercise3"
 	// "github.com/sameerdewan/go-playground/exercise4"
@@ -49,6 +50,8 @@ func main() {
 	// exercise13.Run()
 	// fmt.Println("Exercise 14:\n-----------------------------------")
 	// exercise14.Run()
-	fmt.Println("Exercise 15:\n-----------------------------------")
-	exercise15.Run()
+	// fmt.Println("Exercise 15:\n-----------------------------------")
+	// exercise15.Run()
+	fmt.Println("Exercise 16:\n-----------------------------------")
+	exercise16.Run()
 }
