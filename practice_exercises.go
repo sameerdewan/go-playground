@@ -11,6 +11,7 @@ import (
 	"github.com/sameerdewan/go-playground/exercise6"
 	"github.com/sameerdewan/go-playground/exercise7"
 	"github.com/sameerdewan/go-playground/exercise8"
+	"github.com/sameerdewan/go-playground/exercise9"
 )
 
 func main() {
@@ -30,4 +31,6 @@ func main() {
 	exercise7.Run()
 	fmt.Println("Exercise 8:\n-----------------------------------")
 	exercise8.Run()
+	fmt.Println("Exercise 9:\n-----------------------------------")
+	exercise9.Run()
 }
