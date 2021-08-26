@@ -2,7 +2,6 @@ package exercise7
 
 import (
 	"fmt"
-	"math/rand"
 )
 
 type Location struct {
@@ -15,7 +14,7 @@ type Human struct {
 	first    string
 	last     string
 	location Location
-	id       uint
+	id       int
 }
 
 func structsTest() {
@@ -26,7 +25,7 @@ func structsTest() {
 		first:    "Sameer",
 		last:     "Dewan",
 		location: location,
-		id:       uint(rand.Int()),
+		id:       1,
 	}
 	fmt.Printf("\nhuman:%v\n", sameerDewan)
 }
