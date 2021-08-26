@@ -21,6 +21,15 @@ func loopThroughMap(demo map[string]int) {
 	}
 }
 
+func deleteOddValuedPairs(demo map[string]int) {
+	fmt.Println("\nDeleting odd valued pairs...")
+	for key, value := range demo {
+		if value%2 != 0 {
+			delete(demo, key)
+		}
+	}
+}
+
 func Run() {
 	var demo map[string]int = demoMap()
 	fmt.Printf("\n%v\n", demo)
@@ -29,4 +38,6 @@ func Run() {
 	assignValue(demo) // even though this is passed to another function, demo IS mutated.
 	fmt.Printf("\n%v\n", demo)
 	loopThroughMap(demo)
+	deleteOddValuedPairs(demo)
+	fmt.Printf("\n%v\n", demo)
 }
