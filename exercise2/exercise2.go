@@ -1,5 +1,7 @@
 package exercise2
 
+import "fmt"
+
 /*
 	Exercise #2:
 	------------
@@ -12,8 +14,13 @@ package exercise2
 		c. identifier “z” type bool
 		d. print out the values for each identifier
 		e. The compiler assigned values to the variables. What are these values called?
+			Answer: Zero values
 */
 
-func Run() {
+var x int
+var y string
+var z bool
 
+func Run() {
+	fmt.Printf("x: %v\ny: %v\nz: %v\n", x, y, z)
 }
