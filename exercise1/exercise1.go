@@ -2,6 +2,6 @@ package exercise1
 
 import "fmt"
 
-func run() {
+func Run() {
 	fmt.Println("This is from exercise 1!")
 }
