@@ -1,27 +1,24 @@
 package main
 
-import (
-	"fmt"
-
-	// "github.com/sameerdewan/go-playground/exercise1"
-	// "github.com/sameerdewan/go-playground/exercise10"
-	// "github.com/sameerdewan/go-playground/exercise11"
-	// "github.com/sameerdewan/go-playground/exercise12"
-	// "github.com/sameerdewan/go-playground/exercise13"
-	// "github.com/sameerdewan/go-playground/exercise14"
-	// "github.com/sameerdewan/go-playground/exercise15"
-	// "github.com/sameerdewan/go-playground/exercise16"
-	// "github.com/sameerdewan/go-playground/exercise17"
-	"github.com/sameerdewan/go-playground/exercise18"
-	// "github.com/sameerdewan/go-playground/exercise2"
-	// "github.com/sameerdewan/go-playground/exercise3"
-	// "github.com/sameerdewan/go-playground/exercise4"
-	// "github.com/sameerdewan/go-playground/exercise5"
-	// "github.com/sameerdewan/go-playground/exercise6"
-	// "github.com/sameerdewan/go-playground/exercise7"
-	// "github.com/sameerdewan/go-playground/exercise8"
-	// "github.com/sameerdewan/go-playground/exercise9"
-)
+// "github.com/sameerdewan/go-playground/exercise1"
+// "github.com/sameerdewan/go-playground/exercise10"
+// "github.com/sameerdewan/go-playground/exercise11"
+// "github.com/sameerdewan/go-playground/exercise12"
+// "github.com/sameerdewan/go-playground/exercise13"
+// "github.com/sameerdewan/go-playground/exercise14"
+// "github.com/sameerdewan/go-playground/exercise15"
+// "github.com/sameerdewan/go-playground/exercise16"
+// "github.com/sameerdewan/go-playground/exercise17"
+// "github.com/sameerdewan/go-playground/exercise18"
+// "github.com/sameerdewan/go-playground/exercise19"
+// "github.com/sameerdewan/go-playground/exercise2"
+// "github.com/sameerdewan/go-playground/exercise3"
+// "github.com/sameerdewan/go-playground/exercise4"
+// "github.com/sameerdewan/go-playground/exercise5"
+// "github.com/sameerdewan/go-playground/exercise6"
+// "github.com/sameerdewan/go-playground/exercise7"
+// "github.com/sameerdewan/go-playground/exercise8"
+// "github.com/sameerdewan/go-playground/exercise9"
 
 func main() {
 	// fmt.Println("Exercise 1:\n-----------------------------------")
@@ -58,6 +55,8 @@ func main() {
 	// exercise16.Run()
 	// fmt.Println("Exercise 17:\n-----------------------------------")
 	// exercise17.Run()
-	fmt.Println("Exercise 18:\n-----------------------------------")
-	exercise18.Run()
+	// fmt.Println("Exercise 18:\n-----------------------------------")
+	// exercise18.Run()
+	// fmt.Println("Exercise 19:\n-----------------------------------")
+	// exercise19.Run()
 }
