@@ -13,6 +13,7 @@ func TestAdd(t *testing.T) {
 	}
 }
 
+// Can run "go test -bench ." in terminal for report
 func BenchmarkAdd(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		exercise19.Add(5, 5)
