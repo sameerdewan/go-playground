@@ -19,3 +19,5 @@ func BenchmarkAdd(b *testing.B) {
 		exercise19.Add(5, 5)
 	}
 }
+
+// Can run "go test -cover" in terminal for coverage
